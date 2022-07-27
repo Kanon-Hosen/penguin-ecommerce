@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                bgcolor: '#FFFBF0',
+                cardColor:'#F1F1F1',
+                btnColor:'#A4BC46',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+ <main class="bg-bgcolor">
+    <header class="flex items-center justify-between h-14 shadow px-8 sm:px-14">
+        <div class="logo w-56">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div class="navItem md:overflow-auto overflow-hidden">
+            <ul id="navBar" class="flex flex-col md:flex-row md:relative md:w-full md:right-0 absolute w-1/2 top-14 md:top-0 right-full h-full items-center justify-evenly md:justify-between bg-btnColor md:bg-transparent transition-all">
+                <li><a class="mx-5 font-semibold" href="">Home</a></li>
+                <li><a class="mx-5 font-semibold" href="">Product</a></li>
+                <li><a class="mx-5 font-semibold" href="">About us</a></li>
+                <li><a class="mx-5 font-semibold" href="">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="burger md:hidden cursor-pointer" id="burger">
+            <div class="w-10 h-1 bg-lime-500 my-1"></div>
+            <div class="w-8 h-1 bg-lime-500 my-1"></div>
+            <div class="w-10 h-1 bg-lime-500 my-1"></div>
+        </div>
+    </header>
+    <div class="container mx-auto px-8">
+        <div class="hero flex flex-col sm:flex-row items-center justify-between py-14 sm:py-5">
+            <div class="mb-8 sm:mb-0">
+                <h1 class="my-4">
+                    <span class="uppercase font-bold text-5xl text-[#FABE4C]">Be the Penguins</span>
+                    <br>
+                    <span class="uppercase font-bold text-5xl text-black ">of Winter</span>
+                </h1>
+                <p class="mb-4">Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry.</p>
+                <button class="flex px-7 py-3 bg-lime-500 items-center justify-between rounded-xl text-white uppercase font-semibold">
+                    <img class="w-7" src="./icons/shopping-cart 1.png" alt="">
+                    Buy Now
+                </button>
+            </div>
+            <div>
+                <img src="./images/model.png" alt="">
+            </div>
+        </div>
+    </div>
+ </main>
+ <!-- woman jacket -->
+ <div class="container mx-auto my-10 px-14">
+    <h1 class="font-bold text-4xl uppercase">Woman Jacket</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
+        <div class="flex justify-center rounded-xl shadow-lg border border">
+            <div class="p-4">
+                <div class="w-full bg-cardColor rounded-xl">
+                    <img class="w-full" src="./images/jacket-1.png" alt="">
+                </div>
+                <div class="pt-2">
+                    <h4 class="font-bold text-xl">Yellow Coat Jacket </h4>
+                    <p class="text-sm my-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="flex items-center justify-between mt-1">
+                    <h5 class="font-bold text-xl text-yellow-400">$204</h5>
+                    <button class="flex px-4 py-3 bg-lime-500 items-center justify-between rounded-xl text-white uppercase font-semibold">
+                        <img class="w-7" src="./icons/shopping-cart 1.png" alt="">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center rounded-xl shadow-lg border border">
+            <div class="p-4">
+                <div class="w-full bg-cardColor rounded-xl">
+                    <img class="w-full" src="./images/jacket-2.png" alt="">
+                </div>
+                <div class="pt-2">
+                    <h4 class="font-bold text-xl">Yellow Coat Jacket </h4>
+                    <p class="text-sm my-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="flex items-center justify-between mt-1">
+                    <h5 class="font-bold text-xl text-yellow-400">$204</h5>
+                    <button class="flex px-4 py-3 bg-lime-500 items-center justify-between rounded-xl text-white uppercase font-semibold">
+                        <img class="w-7" src="./icons/shopping-cart 1.png" alt="">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center rounded-xl shadow-lg border border">
+            <div class="p-4">
+                <div class="w-full bg-cardColor rounded-xl ">
+                    <img class="w-full" src="./images/jacket-3.png" alt="">
+                </div>
+                <div class="pt-2">
+                    <h4 class="font-bold text-xl">Yellow Coat Jacket </h4>
+                    <p class="text-sm my-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="flex items-center justify-between mt-1">
+                    <h5 class="font-bold text-xl text-yellow-400">$204</h5>
+                    <button class="flex px-4 py-3 bg-lime-500 items-center justify-between rounded-xl text-white uppercase font-semibold">
+                        <img class="w-7" src="./icons/shopping-cart 1.png" alt="">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- man jacket  -->
+ <div class="container mx-auto my-10 px-14">
+    <h1 class="font-bold text-4xl uppercase">Man Jacket</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
+        <div class="flex justify-center rounded-xl shadow-lg border border">
+            <div class="p-4">
+                <div class="w-full bg-cardColor rounded-xl">
+                    <img class="w-full" src="./images/jacket-4.png" alt="">
+                </div>
+                <div class="pt-2">
+                    <h4 class="font-bold text-xl">Yellow Coat Jacket </h4>
+                    <p class="text-sm my-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="flex items-center justify-between mt-1">
+                    <h5 class="font-bold text-xl text-yellow-400">$204</h5>
+                    <button class="flex px-4 py-3 bg-lime-500 items-center justify-between rounded-xl text-white uppercase font-semibold">
+                        <img class="w-7" src="./icons/shopping-cart 1.png" alt="">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center rounded-xl shadow-lg border border">
+            <div class="p-4">
+                <div class="w-full bg-cardColor rounded-xl">
+                    <img class="w-full" src="./images/jacket-5.png" alt="">
+                </div>
+                <div class="pt-2">
+                    <h4 class="font-bold text-xl">Yellow Coat Jacket </h4>
+                    <p class="text-sm my-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="flex items-center justify-between mt-1">
+                    <h5 class="font-bold text-xl text-yellow-400">$204</h5>
+                    <button class="flex px-4 py-3 bg-lime-500 items-center justify-between rounded-xl text-white uppercase font-semibold">
+                        <img class="w-7" src="./icons/shopping-cart 1.png" alt="">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center rounded-xl shadow-lg border border">
+            <div class="p-4">
+                <div class="w-full bg-cardColor rounded-xl ">
+                    <img class="w-full" src="./images/jacket-6.png" alt="">
+                </div>
+                <div class="pt-2">
+                    <h4 class="font-bold text-xl">Yellow Coat Jacket </h4>
+                    <p class="text-sm my-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="flex items-center justify-between mt-1">
+                    <h5 class="font-bold text-xl text-yellow-400">$204</h5>
+                    <button class="flex px-4 py-3 bg-lime-500 items-center justify-between rounded-xl text-white uppercase font-semibold">
+                        <img class="w-7" src="./icons/shopping-cart 1.png" alt="">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- ---Find the Perfect Fit--  -->
+ <div class="container mx-auto mt-28 pb-5 md:px-14 px-10">
+    <div class="flex flex-col-reverse items-center justify-between md:flex-row">
+        <div class="w-full md:w-1/2">
+            <div class="flex flex-col items-center justify-center text-center md:text-start md:flex-row md:justify-between bg-white shadow-lg rounded p-5 my-5 border ">
+                <div>
+                    <img class="w-32 md:w-40 mr-5" src="./images/house.png" alt="">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-3xl md:text-2xl my-3">Find the Perfect Fit</h3>
+                    <p class="text-gray-500">Everybody is different, which is why we offer styles for every body.</p>
+                </div>
+            </div>
+            <div  class="flex flex-col items-center justify-center text-center md:text-start md:flex-row md:justify-between bg-white shadow-lg rounded p-5 my-5 border ">
+                <div>
+                    <img class="w-32 md:w-40 mr-5" src="./images/box.png" alt="">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-3xl my-3 md:text-2xl">Find the Perfect Fit</h3>
+                    <p class="text-gray-500">Everybody is different, which is why we offer styles for every body.</p>
+                </div>
+            </div>
+            <div  class="flex flex-col items-center justify-center text-center md:text-start md:flex-row md:justify-between bg-white shadow-lg rounded p-5 my-5 border  ">
+                <div>
+                    <img class="w-32 md:w-40 mr-5" src="./images/question.png" alt="">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-3xl my-3 md:text-2xl">Find the Perfect Fit</h3>
+                    <p class="text-gray-500">Everybody is different, which is why we offer styles for every body.</p>
+                </div>
+            </div>
+        </div>
+        <div class="md:w-1/2 w-full p-6"> 
+            <img src="./images/shopping.png" alt="">
+        </div>
+    </div>
+ </div>
+
+
+ <!-- custom js  -->
+ <script src="app.js"></script>
+</body>
+</html>
